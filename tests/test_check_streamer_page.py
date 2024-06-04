@@ -59,7 +59,6 @@ class TestHomePage:
         assert General.SEARCH_TITLE_URL in self.driver.current_url
 
     def _step5_scroll_down(self):
-        time.sleep(4)
         assert self.utils.scroll_down(2), "Scrolls were not performed successfully."
 
     def _step6_open_streamer_page(self):
@@ -79,6 +78,7 @@ class TestHomePage:
                 logger.info("No visible element found.")
         except NoSuchElementException:
             logger.info("Element not found.")
+        assert General.SEARCH_TITLE_URL not in self.driver.current_url
 
     def _step7_wait_till_page_loaded_and_take_screenshot(self):
         self.utils.close_popups()
