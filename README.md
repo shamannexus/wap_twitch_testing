@@ -1,6 +1,7 @@
-# Selenium Test Suite
+# WAP Twitch Test Suite
 
-This repository contains a Selenium test suite for automating tests on a website. The tests are written using Python and pytest, and they utilize the Chrome WebDriver.
+This repository contains a Selenium test suite for automating tests on a website(Mobile emulator from Google Chrome). 
+The tests are written using Python and pytest.
 
 ## Table of Contents
 - [Prerequisites](#prerequisites)
