@@ -28,6 +28,7 @@ class SeleniumUtils:
         General method to close any pop-up
         :return: bool
         """
+        # TODO - locators need to be modified when real pop up will be caught.
         try:
             popup_selectors = [
                 (By.CLASS_NAME, "popup-class-name"),  # Replace with actual class name
